@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Test Edge</title>
+</head>
+<body>
+    <h1>Project : {{name}}</h1>
+    <hr>
+    <h2> Time : {{hours}}</h2>
+    <hr>
+    @if(hours >= 12)
+    <h4 style="color: red">your time over 12 hr.</h4>
+    @elseif(hours < 12)
+    <h4 style="color: green">  your time over 12 hr.</h4>
+    @endif
+
+    @each(nickname in nicknames )
+        <li>{{nickname.nick}}</li>
+    @endeach
+</body>
+</html>

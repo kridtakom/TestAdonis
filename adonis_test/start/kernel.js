@@ -20,6 +20,7 @@ const globalMiddleware = [
   'App/Middleware/ConvertEmptyStringsToNull',
 ]
 
+
 /*
 |--------------------------------------------------------------------------
 | Named Middleware
